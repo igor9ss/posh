@@ -1,127 +1,348 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>posh</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
   <header class="main-header">
     <div class="container">
       <div class="main-header__top-bar top-bar">
         <ul class="top-bar__contacts-list contacts-list">
           <li class="contacts-list__item">
-            <a class="contacts-list__link" href="tel:+84906582725">+84 90 658 2725</a>
+            <a class="contacts-list__link contacts-list__link_phone" href="tel:+84906582725">+84 90 658 2725</a>
           </li>
           <li class="contacts-list__item">
-            <a class="contacts-list__link" href="#">27 Ba Trieu St, Vietnam</a>
-            <!--modal window with adress-->
+            <a class="contacts-list__link contacts-list__link_address" href="https://goo.gl/maps/ux2MQmSkL4p">27 Ba Trieu St, Vietnam</a>
           </li>
         </ul>
         <ul class="top-bar__social-list social-list">
           <li class="social-list__item">
-            <a href="" class="social-list__link">We are on twitter</a>
+            <a href="" class="social-list__link social-list__link_twitter">We are on twitter</a>
           </li>
           <li class="social-list__item">
-            <a href="" class="social-list__link">We are on facebook</a>
+            <a href="" class="social-list__link social-list__link_facebook">We are on facebook</a>
           </li>
           <li class="social-list__item">
-            <a href="" class="social-list__link">We are on youtube</a>
+            <a href="" class="social-list__link social-list__link_youtube">We are on youtube</a>
           </li>
           <li class="social-list__item">
-            <a href="" class="social-list__link">We are on instagram</a>
+            <a href="" class="social-list__link social-list__link_instagram">We are on instagram</a>
           </li>
           <li class="social-list__item">
-            <a href="" class="social-list__link">We are on flickr</a>
+            <a href="" class="social-list__link social-list__link_flickr">We are on flickr</a>
           </li>
         </ul>
       </div>
       <div class="flex-vrapper">
-        <img class="main-header__logo main-logo" src="img/logo.png" alt="posh logo" width="132" height="48">
+        <img class="main-header__logo" src="img/logo.png" alt="posh logo" width="132" height="48">
         <nav class="main-header__nav main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__list-item">
-            <a class="main-nav__link" href="#">Home</a>
-          </li>
-          <li class="main-nav__list-item">
-            <a class="main-nav__link" href="#">Service</a>
-          </li>
-          <li class="main-nav__list-item">
-            <a class="main-nav__link" href="#">Gallery</a>
-          </li>
-          <li class="main-nav__list-item">
-            <a class="main-nav__link" href="#">Channel</a>
-          </li>
-          <li class="main-nav__list-item">
-            <a class="main-nav__link" href="#">Blog</a>
-          </li>
-          <li class="main-nav__list-item">
-            <a class="main-nav__link" href="#">Team</a>
-          </li>
-          <li class="main-nav__list-item">
-            <a class="main-nav__link" href="#">Contact</a>
-          </li>
-        </ul>
-      </nav>
+          <ul class="main-nav__list">
+            <li class="main-nav__list-item">
+              <a class="main-nav__link main-nav__link_current" href="#">Home</a>
+            </li>
+            <li class="main-nav__list-item">
+              <a class="main-nav__link" href="#">Service</a>
+            </li>
+            <li class="main-nav__list-item">
+              <a class="main-nav__link" href="#">Gallery</a>
+            </li>
+            <li class="main-nav__list-item">
+              <a class="main-nav__link" href="#">Channel</a>
+            </li>
+            <li class="main-nav__list-item">
+              <a class="main-nav__link" href="#">Blog</a>
+            </li>
+            <li class="main-nav__list-item">
+              <a class="main-nav__link" href="#">Team</a>
+            </li>
+            <li class="main-nav__list-item">
+              <a class="main-nav__link" href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
       </div>
       <div class="main-header__title-text title-text">
-        <h1 class="title-text__title">It’s <span>Fun</span> To Make Things Up</h1>
-        <p class="title-text__text">Have you ever wondered if what you know about herbal breast enlargement is accurate?</p>
+        <h1 class="text__title">It’s <span>Fun</span> To Make Things Up</h1>
+        <p class="text__text">Have you ever wondered if what you know about herbal breast enlargement is accurate?</p>
       </div>
-      <a href="#" class="btn">About us</a>
-      <a href="#" class="btn btn_video">Watch video</a>
+      <a href="#" class="btn main-header__btn">About us</a>
+      <!--
+      --><a href="#" class="btn btn_video">Watch video</a>
       <nav class="main-header__slider-control slider-control">
-        <a href="#" class="slider-control__item">Slide 1</a>
-        <a href="#" class="slider-control__item">Slide 2</a>
-        <a href="#" class="slider-control__item">Slide 3</a>
-        <a href="#" class="slider-control__item">Slide 4</a>
-        <a href="#" class="slider-control__item">Slide 5</a>
+        <a href="#" class="slider-control__item slider-control__item_current slider-control__item_home">Home</a>
+        <a href="#" class="slider-control__item slider-control__item_services">Services</a>
+        <a href="#" class="slider-control__item slider-control__item_channel">Channel</a>
+        <a href="#" class="slider-control__item slider-control__item_latest-blog">Latest Blog</a>
+        <a href="#" class="slider-control__item slider-control__item_contacts">Contacts</a>
       </nav>
     </div>
   </header>
   <main class="main-content">
     <div class="container container_services">
-      <section class="main-content__section">
+      <section class="main-content__section services-section">
         <header class="section-header">
-          <h2 class="section__header__title">Our Services2</h2>
-          <p class="section__header__text">Vastly improved treatments and increased social acceptance has lead to cosmetic</p>
+          <h2 class="section-header__title">Our Services</h2>
+          <p class="section-header__text">Vastly improved treatments and increased social acceptance has lead to cosmetic</p>
         </header>
-
+        <ul class="services__list">
+          <li class="services__list-item">
+            <a href="#" class="services__list-link services__list-link_about">About</a>
+          </li>
+          <li class="services__list-item">
+            <a href="#" class="services__list-link services__list-link_current services__list-link_wedding">Wedding</a>
+          </li>
+          <li class="services__list-item">
+            <a href="#" class="services__list-link services__list-link_party">Party</a>
+          </li>
+          <li class="services__list-item">
+            <a href="#" class="services__list-link services__list-link_beauty-box">Beauty Box</a>
+          </li>
+          <li class="services__list-item">
+            <a href="#" class="services__list-link services__list-link_course">Course</a>
+          </li>
+        </ul>
+        <figure class="services__slider-box slider-box about">
+          <img class="slider-box__img" src="http://place-hold.it/630x380" alt="Фото невесты" width="630" height="380">
+          <figcaption class="slider-box__descr">
+            <h1 class="slider-box__descr-title">Lorem ipsum dolor sit amet, consectetur</h1>
+            <p class="slider-box__descr-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati tempore ut porro animi, deleniti itaque saepe, nostrum incidunt voluptas laboriosam suscipit, qui beatae doloremque accusantium accusamus harum unde amet! Placeat?.</p>
+            <a class="slider-box__descr-link" href="#">Learn more</a>
+          </figcaption>
+        </figure>
+        <figure class="services__slider-box slider-box slider-box_active wedding">
+          <img class="slider-box__img" src="img/services-bride-img.png" alt="Фото невесты" width="630" height="380">
+          <figcaption class="slider-box__descr">
+            <h1 class="slider-box__descr-title">To Keep Makeup Looking Fresh Take A Powder</h1>
+            <p class="slider-box__descr-text">Hydroderm is the highly desired anti-aging cream on the block. This serum restricts the occurrence of early aging sings on the skin and keeps the skin younger, tighter and healthier.</p>
+            <a class="slider-box__descr-link" href="#">Learn more</a>
+          </figcaption>
+        </figure>
+        <figure class="services__slider-box slider-box party">
+          <img class="slider-box__img" src="http://place-hold.it/630x380" alt="Фото невесты" width="630" height="380">
+          <figcaption class="slider-box__descr">
+            <h1 class="slider-box__descr-title">Hydroderm is the highly desired anti-aging cream on</h1>
+            <p class="slider-box__descr-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere magni est cum, voluptates asperiores nostrum praesentium aperiam corporis, mollitia, cumque id dicta! Obcaecati minima sunt, nostrum eligendi voluptate vero eius?.</p>
+            <a class="slider-box__descr-link" href="#">Learn more</a>
+          </figcaption>
+        </figure>
+        <figure class="services__slider-box slider-box beauty-box">
+          <img class="slider-box__img" src="http://place-hold.it/630x380" alt="Фото невесты" width="630" height="380">
+          <figcaption class="slider-box__descr">
+            <h1 class="slider-box__descr-title">To Keep Makeup Looking Fresh Take A Powder</h1>
+            <p class="slider-box__descr-text">Hydroderm is the highly desired anti-aging cream on the block. This serum restricts the occurrence of early aging sings on the skin and keeps the skin younger, tighter and healthier.</p>
+            <a class="slider-box__descr-link" href="#">Learn more</a>
+          </figcaption>
+        </figure>
+        <figure class="services__slider-box slider-box course">
+          <img class="slider-box__img" src="http://place-hold.it/630x380" alt="Фото" width="630" height="380">
+          <figcaption class="slider-box__descr">
+            <h1 class="slider-box__descr-title">This serum restricts the occurrence of early ag</h1>
+            <p class="slider-box__descr-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat cumque cupiditate ex, ad accusantium nobis ea totam non laborum repellat tenetur modi aliquam velit veniam voluptatibus nihil eveniet molestiae aliquid..</p>
+            <a class="slider-box__descr-link" href="#">Learn more</a>
+          </figcaption>
+        </figure>
       </section>
-    </div>
-    <section class="main-content__section main-content__section_galery">
+      <script>
 
+        var servicesListLinksElements = document.querySelectorAll('.services__list-link');
+        var sliderBoxElements = document.querySelectorAll(".slider-box");
+        var tabLinksElements = document.querySelectorAll(".services__list-link");
+
+        var map = {
+          0: 'about',
+          1: 'wedding',
+          2: 'party',
+          3: 'beauty-box',
+          4: 'course'
+        };
+
+        servicesListLinksElements.forEach(function (servicesListLink, i) {
+          servicesListLink.addEventListener('click', function (evt) {
+            evt.preventDefault();
+            hideSliderBoxesElements();
+            removeTabLinksElementsClassCurrent();
+            openCity(evt, '.' + map[i])
+          });
+        });
+
+        var hideSliderBoxesElements = function () {
+
+          sliderBoxElements.forEach(function (sliderBoxElement) {
+            sliderBoxElement.style.display = "none";
+          });
+        };
+
+        var removeTabLinksElementsClassCurrent = function () {
+          tabLinksElements.forEach(function (tabLinksElement) {
+            tabLinksElement.classList.remove("services__list-link_current")
+          });
+        };
+
+        var openCity = function(evt, sliderBoxName) {
+          document.querySelector(sliderBoxName).style.display = "flex";
+          evt.currentTarget.classList.add('services__list-link_current');
+        };
+      </script>
+    </div>
+    <section class="galery-section">
+      <div class="galery-section__slider-box">
+        <div class="galery-section__description">
+          <span class="galery-section__date">Sep  24</span>
+          <p class="galery-section__text">Have you ever wondered if what you know about herbal breast enlargement is accurate? Consider the following paragraphs and compare what you know to the latest info on herbal breast enlargement. Women are often not happy with their breast size...</p>
+        </div>
+      </div>
     </section>
     <div class="container">
-      <section class="main-content__section">
+      <section class="main-content__section channel-section">
         <header class="section-header">
-          <h2 class="section__header__title">Channel</h2>
-          <p class="section__header__text">Vastly improved treatments and increased social</p>
+          <h2 class="section-header__title">Channel</h2>
+          <p class="section-header__text">Vastly improved treatments and increased social</p>
         </header>
-
+        <video class="channel-section__video" src="#" width="640" height="360" poster="img/channel-section-video-poster.png">
+          <source src="#.ogv" type='video/ogg; codecs="theora, vorbis"'>
+          <source src="#.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+          <source src="#.webm" type='video/webm; codecs="vp8, vorbis"'>
+          Элемент video не поддерживается вашим браузером.
+        </video>
+        <button class="channel-section__play-btn" type="button">PLAY</button>
+        <a class="btn channel-section__btn" href="#">more video</a>
+      </section>
+    </div>
+    <div class="container container_blog">
+      <section class="main-content__section blog-section">
+        <header class="section-header">
+          <h2 class="section-header__title">Latest Blog</h2>
+        </header>
+        <ul class="blog-section__list">
+          <li class="blog-section__list-item">
+            <a href="#" class="blog-section__list-link">all</a>
+          </li>
+          <li class="blog-section__list-item">
+            <a href="#" class="blog-section__list-link blog-section__list-link_current">reviews</a>
+          </li>
+          <li class="blog-section__list-item">
+            <a href="#" class="blog-section__list-link">looks</a>
+          </li>
+          <li class="blog-section__list-item">
+            <a href="#" class="blog-section__list-link">lifestyles</a>
+          </li>
+          <li class="blog-section__list-item">
+            <a href="#" class="blog-section__list-link">tips</a>
+          </li>
+          <li class="blog-section__list-item">
+            <a href="#" class="blog-section__list-link">tutorials</a>
+          </li>
+        </ul>
+        <div class="blog-section__posts-box">
+          <article class="blog-section__post blog-section__post_2x">
+            <a href="#" class="blog-section__post-link">
+              <img class="blog-section__post-img" src="img/blog-post-photo1.png" alt="контентное фото поста">
+              <h3 class="blog-section__post-title blog-section__post-title_2x">Hollywood Hairstyles Do Not Require A Trip To A High Priced Salon Or Beautician</h3>
+              <span class="blog-section__post-autor">Eugenia Frank / <date datetime="2018-04-22">April 22</date></span>
+            </a>
+          </article>
+          <article class="blog-section__post">
+            <a href="#" class="blog-section__post-link">
+              <img class="blog-section__post-img blog-section__post-img_shadow" src="img/blog-post-photo2.png" alt="контентное фото поста">
+              <h3 class="blog-section__post-title">Forehead Lift Brow Lift Temporal Lift For Head Rejuvenation</h3>
+              <span class="blog-section__post-autor">Eugenia Frank / <date datetime="2018-04-22">April 22</date></span>
+            </a>
+          </article>
+          <article class="blog-section__post">
+            <a href="#" class="blog-section__post-link">
+              <img class="blog-section__post-img" src="img/blog-post-photo3.png" alt="контентное фото поста">
+              <h3 class="blog-section__post-title">Breast Enlargement Exercises Cheapest Inborn Sense Promoting Breast Lump</h3>
+              <span class="blog-section__post-autor">Eugenia Frank / <date datetime="2018-04-22">April 22</date></span>
+            </a>
+          </article>
+          <article class="blog-section__post">
+            <a href="#" class="blog-section__post-link">
+              <img class="blog-section__post-img" src="img/blog-post-photo4.png" alt="контентное фото поста">
+              <h3 class="blog-section__post-title">Curling Irons Are As Individual As The Women Who Use Them</h3>
+              <span class="blog-section__post-autor">Eugenia Frank / <date datetime="2018-04-22">April 22</date></span>
+            </a>
+          </article>
+          <article class="blog-section__post">
+            <a href="#" class="blog-section__post-link">
+              <img class="blog-section__post-img" src="img/blog-post-photo5.png" alt="контентное фото поста">
+              <h3 class="blog-section__post-title">Hollywood Hairstyles Do Not Require A Trip To A High Priced Salon Or Beautician</h3>
+              <span class="blog-section__post-autor">Eugenia Frank / <date datetime="2018-04-22">April 22</date></span>
+            </a>
+          </article>
+        </div>
+        <a href="" class="blog-section__btn btn">see more</a>
       </section>
     </div>
     <div class="container">
-      <section class="main-content__section">
+      <section class="main-content__section contact-section">
         <header class="section-header">
-          <h2 class="section__header__title">Latest Blog</h2>
+          <h2 class="section-header__title">Contact</h2>
+          <p class="section-header__text">Vastly improved treatments and increased social</p>
         </header>
-
+        <ul class="contact-section__list">
+          <li>
+            <a class="contact-section__link contact-section__link_address" href="https://goo.gl/maps/ux2MQmSkL4p">
+              <span class="contact-section__type">address</span>
+              <span class="contact-section__target">27 Ba Trieu St. Hue, Vietnam</span>
+            </a>
+          </li>
+          <li>
+            <a href="tel:+84906582725" class="contact-section__link contact-section__link_phone">
+              <span class="contact-section__type">phone numbers</span>
+              <span class="contact-section__target">+84 90 658 2725</span>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:junoteamvn@gmail.com" class="contact-section__link contact-section__link_mail">
+              <span class="contact-section__type">email contact</span>
+              <span class="contact-section__target">junoteamvn@gmail.com</span>
+            </a>
+          </li>
+        </ul>
       </section>
-    </div>
-    <div class="container">
-      <section class="main-content__section">
-      <header class="section-header">
-        <h2 class="section__header__title">Contact</h2>
-        <p class="section__header__text">Vastly improved treatments and increased social</p>
-      </header>
-
-    </section>
     </div>
   </main>
   <footer class="main-footer">
-
+    <div class="container">
+      <nav class="main-footer__nav main-nav main-nav_footer">
+        <ul class="main-nav__list">
+          <li class="main-nav__list-item main-nav__list-item_footer">
+            <a class="main-nav__link" href="#">Home</a>
+          </li>
+          <li class="main-nav__list-item main-nav__list-item_footer">
+            <a class="main-nav__link" href="#">Service</a>
+          </li>
+          <li class="main-nav__list-item main-nav__list-item_footer">
+            <a class="main-nav__link" href="#">Gallery</a>
+          </li>
+          <li class="main-nav__list-item main-nav__list-item_footer">
+            <a class="main-nav__link" href="#">Channel</a>
+          </li>
+          <li class="main-nav__list-item main-nav__list-item_footer">
+            <a class="main-nav__link" href="#">Blog</a>
+          </li>
+          <li class="main-nav__list-item main-nav__list-item_footer">
+            <a class="main-nav__link" href="#">Team</a>
+          </li>
+          <li class="main-nav__list-item main-nav__list-item_footer">
+            <a class="main-nav__link" href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <img class="main-footer__logo" src="img/footer-logo.png" alt="posh logo" width="180" height="65">
+      <ul class="main-footer__social-list">
+        <li><a class="main-footer__social-link" href="#">facebook</a>&nbsp&nbsp/&nbsp&nbsp</li>
+        <li><a class="main-footer__social-link" href="#">instagram</a>&nbsp&nbsp/&nbsp&nbsp</li>
+        <li><a class="main-footer__social-link" href="#">youtube</a></li>
+      </ul>
+    </div>
+    <a href="#" class="main-footer__go-top">Go to top</a>
   </footer>
 </body>
+
 </html>

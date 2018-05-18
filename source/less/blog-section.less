@@ -1,0 +1,119 @@
+.blog-section {
+  margin: 0 auto;
+  width: 1170px;
+}
+
+.blog-section__list {
+  display: flex;
+  margin: 18px auto 67px;
+  padding: 0;
+  width: 472px;
+  list-style: none;
+
+  justify-content: space-between;
+}
+
+.blog-section__list-link {
+  color: #3a3a3a;
+  font-size: 16px;
+  &:hover {
+    color: #e8be7b;
+  }
+}
+
+.blog-section__list-link_current {
+  color: #e8be7b;
+}
+
+.blog-section__posts-box {
+  position: relative;
+  display: grid;
+  margin-bottom: 66px;
+
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-column-gap: 29px;
+  grid-row-gap: 26px;
+  &::before {
+    position: absolute;
+    top: 79px;
+    left: -74px;
+    display: inline-block;
+    color: #525252;
+    content: 'highlight post';
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    transform: rotate(270deg);
+  }
+  &::after {
+    position: absolute;
+    top: 158px;
+    left: -18px;
+    display: inline-block;
+    width: 1px;
+    height: 50px;
+    background-color: #494949;
+    content: '';
+  }
+}
+
+.blog-section__post {
+  box-sizing: border-box;
+  &:hover {
+    animation: scale 0.5s ease;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+  }
+}
+
+@keyframes scale {
+  100% { transform: scale(1.1) }
+}
+
+.blog-section__post-img_shadow {
+  box-shadow: 10px 10px 0 0 #e8be7b;
+}
+
+.blog-section__post_2x {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.blog-section__post-title {
+  margin: 0;
+  padding-right: 15px;
+  color: #525252;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  &_2x {
+    width: 476px;
+  }
+}
+
+.blog-section__post-autor {
+  color: #757575;
+  font-weight: 300;
+  font-size: 16px;
+  font-family: Butler;
+}
+
+.blog-section__btn {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  width: 171px;
+  height: 48px;
+  border: 1px solid #525252;
+  color: #3a3a3a;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 48px;
+  &:hover {
+    border-color: #e8be7b;
+    background-color: #e8be7b;
+    color: #fff;
+  }
+}

@@ -1,27 +1,51 @@
 @font-face {
-  font-family: "Lato";
   font-weight: 400;
   font-style: normal;
-  font-display: swap;
+  font-family: "Lato";
   src: local("Lato"),
     url("../fonts/lato-regular-webfont.woff") format("woff"),
     url("../fonts/lato-regular-webfont.woff2") format("woff2");
+
+  font-display: swap;
 }
 
 @font-face {
-  font-family: "Lato";
   font-weight: 700;
   font-style: normal;
-  font-display: swap;
+  font-family: "Lato";
   src: local("Lato Bold"),
     url("../fonts/lato-bold-webfont.woff") format("woff"),
     url("../fonts/lato-bold-webfont.woff2") format("woff2");
+
+  font-display: swap;
+}
+
+@font-face {
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Butler";
+  src: local("Butler"),
+    url("../fonts/Butler_regular-webfont.woff") format("woff"),
+    url("../fonts/Butler_regular-webfont.woff2") format("woff2");
+
+  font-display: swap;
+}
+
+@font-face {
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Butler";
+  src: local("Butler Bold"),
+    url("../fonts/Butler_bold-webfont.woff") format("woff"),
+    url("../fonts/Butler_bold-webfont.woff2") format("woff2");
+
+  font-display: swap;
 }
 
 body {
+  box-sizing: border-box;
   margin: 0;
   font-family: Lato, sans-serif;
-  box-sizing: border-box;
 }
 
 img {
@@ -39,3 +63,15 @@ a {
 @import "main-header.less";
 @import "top-bar.less";
 @import "main-nav.less";
+@import "text.less";
+@import "btn.less";
+@import "slider-control.less";
+@import "main-content.less";
+@import "section-header.less";
+@import "services-section.less";
+@import "slider-box.less";
+@import "galery-section.less";
+@import "channel-section.less";
+@import "blog-section.less";
+@import "contact-section.less";
+@import "main-footer.less";

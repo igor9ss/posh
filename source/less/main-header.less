@@ -3,20 +3,37 @@
   min-height: 846px;
   background-color: #3a3a3a;
   background-image: url("../img/header-background.png");
-  background-repeat: no-repeat;
+  background-position: center top;
   background-size: cover;
-
+  background-repeat: no-repeat;
+  text-align: center;
   &::after {
-    content: "";
     position: absolute;
     top: 59px;
+    left: 0;
     width: 100%;
     height: 1px;
     background-color: rgba(255, 255, 255 ,0.3);
+    content: "";
   }
 }
 
 .main-header__nav {
   display: inline-block;
   margin-top: -30px;
+}
+
+.main-header__title-text {
+  margin-top: 223px;
+  margin-bottom: 46px;
+}
+
+.main-header__btn {
+  margin-right: 30px;
+}
+
+.main-header__slider-control {
+  position: absolute;
+  top: 50%;
+  right: 30px;
 }
