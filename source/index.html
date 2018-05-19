@@ -17,7 +17,7 @@
             <a class="contacts-list__link contacts-list__link_phone" href="tel:+84906582725">+84 90 658 2725</a>
           </li>
           <li class="contacts-list__item">
-            <a class="contacts-list__link contacts-list__link_address" href="https://goo.gl/maps/ux2MQmSkL4p">27 Ba Trieu St, Vietnam</a>
+            <a class="contacts-list__link contacts-list__link_address" href="https://goo.gl/maps/ux2MQmSkL4p" target="_blank">27 Ba Trieu St, Vietnam</a>
           </li>
         </ul>
         <ul class="top-bar__social-list social-list">
@@ -46,22 +46,22 @@
               <a class="main-nav__link main-nav__link_current" href="#">Home</a>
             </li>
             <li class="main-nav__list-item">
-              <a class="main-nav__link" href="#">Service</a>
+              <a class="main-nav__link" href="#services">Service</a>
             </li>
             <li class="main-nav__list-item">
-              <a class="main-nav__link" href="#">Gallery</a>
+              <a class="main-nav__link" href="#gallery">Gallery</a>
             </li>
             <li class="main-nav__list-item">
-              <a class="main-nav__link" href="#">Channel</a>
+              <a class="main-nav__link" href="#channel">Channel</a>
             </li>
             <li class="main-nav__list-item">
-              <a class="main-nav__link" href="#">Blog</a>
+              <a class="main-nav__link" href="#blog">Blog</a>
             </li>
             <li class="main-nav__list-item">
-              <a class="main-nav__link" href="#">Team</a>
+              <a class="main-nav__link" href="#team">Team</a>
             </li>
             <li class="main-nav__list-item">
-              <a class="main-nav__link" href="#">Contact</a>
+              <a class="main-nav__link" href="#contact">Contact</a>
             </li>
           </ul>
         </nav>
@@ -73,17 +73,10 @@
       <a href="#" class="btn main-header__btn">About us</a>
       <!--
       --><a href="#" class="btn btn_video">Watch video</a>
-      <nav class="main-header__slider-control slider-control">
-        <a href="#" class="slider-control__item slider-control__item_current slider-control__item_home">Home</a>
-        <a href="#" class="slider-control__item slider-control__item_services">Services</a>
-        <a href="#" class="slider-control__item slider-control__item_channel">Channel</a>
-        <a href="#" class="slider-control__item slider-control__item_latest-blog">Latest Blog</a>
-        <a href="#" class="slider-control__item slider-control__item_contacts">Contacts</a>
-      </nav>
     </div>
   </header>
   <main class="main-content">
-    <div class="container container_services">
+    <div class="container container_services" id="services">
       <section class="main-content__section services-section">
         <header class="section-header">
           <h2 class="section-header__title">Our Services</h2>
@@ -147,73 +140,46 @@
           </figcaption>
         </figure>
       </section>
-      <script>
-
-        var servicesListLinksElements = document.querySelectorAll('.services__list-link');
-        var sliderBoxElements = document.querySelectorAll(".slider-box");
-        var tabLinksElements = document.querySelectorAll(".services__list-link");
-
-        var map = {
-          0: 'about',
-          1: 'wedding',
-          2: 'party',
-          3: 'beauty-box',
-          4: 'course'
-        };
-
-        servicesListLinksElements.forEach(function (servicesListLink, i) {
-          servicesListLink.addEventListener('click', function (evt) {
-            evt.preventDefault();
-            hideSliderBoxesElements();
-            removeTabLinksElementsClassCurrent();
-            openCity(evt, '.' + map[i])
-          });
-        });
-
-        var hideSliderBoxesElements = function () {
-
-          sliderBoxElements.forEach(function (sliderBoxElement) {
-            sliderBoxElement.style.display = "none";
-          });
-        };
-
-        var removeTabLinksElementsClassCurrent = function () {
-          tabLinksElements.forEach(function (tabLinksElement) {
-            tabLinksElement.classList.remove("services__list-link_current")
-          });
-        };
-
-        var openCity = function(evt, sliderBoxName) {
-          document.querySelector(sliderBoxName).style.display = "flex";
-          evt.currentTarget.classList.add('services__list-link_current');
-        };
-      </script>
     </div>
-    <section class="galery-section">
-      <div class="galery-section__slider-box">
+    <section class="galery-section" id="gallery">
+      <div class="galery-section__slide-box">
         <div class="galery-section__description">
-          <span class="galery-section__date">Sep  24</span>
-          <p class="galery-section__text">Have you ever wondered if what you know about herbal breast enlargement is accurate? Consider the following paragraphs and compare what you know to the latest info on herbal breast enlargement. Women are often not happy with their breast size...</p>
+          <div class="galery-section__slide">
+            <time class="galery-section__date" datetime ="2018-09-24">Sep  24</time>
+            <p class="galery-section__text">Have you ever wondered if what you know about herbal breast enlargement is accurate? Consider the following paragraphs and compare what you know to the latest info on herbal breast enlargement. Women are often not happy with their breast size...</p>
+          </div>
+          <div class="galery-section__slide">
+            <time class="galery-section__date" datetime ="2018-09-24">Sep  25</time>
+            <p class="galery-section__text">Have you ever wondered if what you know about herbal breast enlargement is accurate? Consider the following paragraphs and compare what you know to the latest info on herbal breast enlargement. Women are often not happy with their breast size...know about herbal breast enlargement is accurate? Consider the following paragraphs and compare what you know to</p>
+          </div>
+          <div class="galery-section__slide">
+            <time class="galery-section__date" datetime ="2018-09-24">Sep  26</time>
+            <p class="galery-section__text">Have you ever wondered if what you know about herbal breast enlargement is accurate? Consider the following paragraphs and compare what you</p>
+          </div>
+        <a class="galery-section__control galery-section__control_prev" href="#"></a>
+        <a class="galery-section__control galery-section__control_next" href="#"></a>
         </div>
       </div>
     </section>
     <div class="container">
-      <section class="main-content__section channel-section">
+      <section class="main-content__section channel-section" id="channel">
         <header class="section-header">
           <h2 class="section-header__title">Channel</h2>
           <p class="section-header__text">Vastly improved treatments and increased social</p>
         </header>
-        <video class="channel-section__video" src="#" width="640" height="360" poster="img/channel-section-video-poster.png">
-          <source src="#.ogv" type='video/ogg; codecs="theora, vorbis"'>
-          <source src="#.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-          <source src="#.webm" type='video/webm; codecs="vp8, vorbis"'>
-          Элемент video не поддерживается вашим браузером.
-        </video>
-        <button class="channel-section__play-btn" type="button">PLAY</button>
+        <div class="channel-section__video-box">
+          <video class="channel-section__video" src="#" width="640" height="360" poster="img/channel-section-video-poster.png">
+            <source src="#.ogv" type='video/ogg; codecs="theora, vorbis"'>
+            <source src="#.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+            <source src="#.webm" type='video/webm; codecs="vp8, vorbis"'>
+            Элемент video не поддерживается вашим браузером.
+          </video>
+          <button class="channel-section__play-btn" type="button">PLAY</button>
+        </div>
         <a class="btn channel-section__btn" href="#">more video</a>
       </section>
     </div>
-    <div class="container container_blog">
+    <div class="container container_blog" id="blog">
       <section class="main-content__section blog-section">
         <header class="section-header">
           <h2 class="section-header__title">Latest Blog</h2>
@@ -279,7 +245,7 @@
       </section>
     </div>
     <div class="container">
-      <section class="main-content__section contact-section">
+      <section class="main-content__section contact-section" id="contact">
         <header class="section-header">
           <h2 class="section-header__title">Contact</h2>
           <p class="section-header__text">Vastly improved treatments and increased social</p>
@@ -343,6 +309,88 @@
     </div>
     <a href="#" class="main-footer__go-top">Go to top</a>
   </footer>
-</body>
+  <script>
+////////////////////      Services toggle      ////////////////////
+    var servicesListLinksElements = document.querySelectorAll('.services__list-link');
+      var sliderBoxElements = document.querySelectorAll(".slider-box");
+      var tabLinksElements = document.querySelectorAll(".services__list-link");
 
+      var map = {
+        0: 'about',
+        1: 'wedding',
+        2: 'party',
+        3: 'beauty-box',
+        4: 'course'
+      };
+
+      servicesListLinksElements.forEach(function (servicesListLink, i) {
+        servicesListLink.addEventListener('click', function (evt) {
+          evt.preventDefault();
+          hideSliderBoxesElements();
+          removeTabLinksElementsClassCurrent();
+          showSlide(evt, '.' + map[i])
+        });
+      });
+
+      var hideSliderBoxesElements = function () {
+        sliderBoxElements.forEach(function (sliderBoxElement) {
+          sliderBoxElement.style.display = "none";
+        });
+      };
+
+      var removeTabLinksElementsClassCurrent = function () {
+        tabLinksElements.forEach(function (tabLinksElement) {
+          tabLinksElement.classList.remove("services__list-link_current")
+        });
+      };
+
+      var showSlide = function(evt, sliderBoxName) {
+        document.querySelector(sliderBoxName).style.display = "flex";
+        evt.currentTarget.classList.add('services__list-link_current');
+      };
+
+////////////////////      Galery toggle      ////////////////////
+        var prev = document.querySelector('.galery-section__control_prev');
+        var next = document.querySelector('.galery-section__control_next');
+
+        prev.addEventListener('click', function(evt) {
+          evt.preventDefault();
+          plusSlides(-1);
+        });
+
+        next.addEventListener('click', function(evt) {
+          evt.preventDefault();
+          plusSlides(1);
+        });
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("galery-section__slide");
+
+          if (n > slides.length) {slideIndex = 1};
+          if (n < 1) {slideIndex = slides.length};
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          };
+          slides[slideIndex-1].style.display = "flex";
+        }
+////////////////////      Go top button      ////////////////////
+    window.addEventListener('scroll', scrollFunction);
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+          document.querySelector(".main-footer__go-top").style.opacity = 1;
+      } else {
+          document.querySelector(".main-footer__go-top").style.opacity = 0;
+      }
+    }
+  </script>
+</body>
 </html>

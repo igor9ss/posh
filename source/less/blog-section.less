@@ -60,15 +60,10 @@
 
 .blog-section__post {
   box-sizing: border-box;
+  transition: 0.6s ease;
   &:hover {
-    animation: scale 0.5s ease;
-    animation-fill-mode: forwards;
-    animation-direction: alternate;
+    transform: scale(1.1);
   }
-}
-
-@keyframes scale {
-  100% { transform: scale(1.1) }
 }
 
 .blog-section__post-img_shadow {
